@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="google-site-verification" content="xBT4GhYoi5qRD5tr338pgPM5OWHHIDR6mNg1a3euekI" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="blog">
+    <meta name="keyword"  content="">
+    <link rel="shortcut icon" href="/img/favicon.ico">
+
+    <title>
+        
+        用 Hexo 和 GitHub Pages 搭建blog - yiming ling
+        
+    </title>
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="/css/aircloud.css">
+    <link rel="stylesheet" href="/css/gitment.css">
+    <!--<link rel="stylesheet" href="https://imsun.github.io/gitment/style/default.css">-->
+    <link href="//at.alicdn.com/t/font_620856_pl6z7sid89qkt9.css" rel="stylesheet" type="text/css">
+    <!-- ga & ba script hoook -->
+    <script></script>
+</head>
+
+<body>
+
+<div class="site-nav-toggle" id="site-nav-toggle">
+    <button>
+        <span class="btn-bar"></span>
+        <span class="btn-bar"></span>
+        <span class="btn-bar"></span>
+    </button>
+</div>
+
+<div class="index-about">
+    <i> 记录，资料 </i>
+</div>
+
+<div class="index-container">
+    
+    <div class="index-left">
+        
+<div class="nav" id="nav">
+    <div class="avatar-name">
+        <div class="avatar">
+            <img src="/img/avatar.jpeg" />
+        </div>
+        <div class="name">
+            <i>yiming ling</i>
+        </div>
+    </div>
+    <div class="contents" id="nav-content">
+        <ul>
+            <li >
+                <a href="/">
+                    <i class="iconfont icon-shouye1"></i>
+                    <span>HOME</span>
+                </a>
+            </li>
+            <li >
+                <a href="/tags">
+                    <i class="iconfont icon-biaoqian1"></i>
+                    <span>TAGS</span>
+                </a>
+            </li>
+            <li >
+                <a href="/archive">
+                    <i class="iconfont icon-guidang2"></i>
+                    <span>ARCHIVES</span>
+                </a>
+            </li>
+            <li >
+                <a href="/about/">
+                    <i class="iconfont icon-guanyu2"></i>
+                    <span>ABOUT</span>
+                </a>
+            </li>
+            
+            <li>
+                <a id="search">
+                    <i class="iconfont icon-sousuo1"></i>
+                    <span>SEARCH</span>
+                </a>
+            </li>
+            
+        </ul>
+    </div>
+    
+        <div id="toc" class="toc-article">
+    <ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#Github-Pages"><span class="toc-text">Github Pages</span></a></li></ol>
+</div>
+    
+</div>
+
+
+<div class="search-field" id="search-field">
+    <div class="search-container">
+        <div class="search-input">
+            <span id="esc-search"> <i class="icon-fanhui iconfont"></i></span>
+            <input id="search-input"/>
+            <span id="begin-search">search</span>
+        </div>
+        <div class="search-result-container" id="search-result-container">
+
+        </div>
+    </div>
+</div>
+        <div class="index-about-mobile">
+            <i> 记录，资料 </i>
+        </div>
+    </div>
+    
+    <div class="index-middle">
+        <!-- Main Content -->
+        
+
+
+<div class="post-container">
+    <div class="post-title">
+        用 Hexo 和 GitHub Pages 搭建blog
+    </div>
+
+    <div class="post-meta">
+        <span class="attr">Post：<span>2018-08-30 12:55:00</span></span>
+        
+        <span class="attr">Tags：/
+        
+        <a class="tag" href="/tags/#blog" title="blog">blog</a>
+        <span>/</span>
+        
+        
+        </span>
+        <span class="attr">Visit：<span id="busuanzi_value_page_pv"></span>
+</span>
+</span>
+    </div>
+    <div class="post-content ">
+        <p>我参考了这个文章 [用 Hexo 和 GitHub Pages 搭建博客]<a href="https://ryanluoxu.github.io/2017/11/24/用-Hexo-和-GitHub-Pages-搭建博客/" target="_blank" rel="noopener">https://ryanluoxu.github.io/2017/11/24/用-Hexo-和-GitHub-Pages-搭建博客/</a><br>搭建了我自己的blog</p>
+<p>总共分这么几步</p>
+<ol>
+<li>github pages<br> 其实这个非常的简单，主要是在链接自己的域名的时候遇到一些问题<br> 注意 CNAME 和 A 就可以了</li>
+<li>Hexo 框架<br>我发现这个框架还是很好用的，所以大概以后博客类型的网页我都会用这个啦</li>
+</ol>
+<p>其实就是帮你生成了html，css之类的东西，比自己手写还是快多了，想当初自己手写html简直想哭</p>
+<ol start="3">
+<li>具体怎么部署 hexo框架</li>
+<li>更换 Next 主题</li>
+</ol>
+<h1 id="Github-Pages"><a href="#Github-Pages" class="headerlink" title="Github Pages"></a>Github Pages</h1><p>github pages 还是很简单的，创建一个以 名字.github.io 结尾的 repository，名字什么的自己随便叫，但是要是英文的</p>
+<p>这个 repo 里面的东西就是会显示在博客上的啦，如果你不想绑定自己的域名，那么 名字.github.io 就会是你自己的网站啦。 不需要复杂功能的话只需要在这个repo里建一个 README.md 文件然后修改这个文件，就可以在自己的网站上修改博客了。</p>
+<p>如果想链接自己的域名怎么办呢</p>
+<blockquote>
+<ol>
+<li>在repo里加一个CNAME文件，全大写</li>
+<li>在CNAME里面写上你的域名，例如我就是lyiming.io</li>
+<li>打开自己的域名管理，我用的是google domain</li>
+<li>在domain的 DNS 里面加上新的DNS设置</li>
+</ol>
+</blockquote>
+<p>#安装nodejs下载就好啦</p>
+<p>#安装github下载就好啦</p>
+<p>#安装hexo, 这时候已经有nodejs了所以npm install -g hexo-cli就好了</p>
+<p>#初始化博客<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="variable">$hexo</span> init</span><br></pre></td></tr></table></figure></p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">安装那些有的没的依赖</span><br><span class="line"><span class="variable">$npm</span> install</span><br></pre></td></tr></table></figure>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="variable">$hexo</span> g</span><br></pre></td></tr></table></figure>
+<p>#每次怎么发布新的post呢<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="variable">$hexo</span> new <span class="string">"post的名字"</span></span><br><span class="line"><span class="variable">$hexo</span> g</span><br><span class="line"><span class="variable">$hexo</span> s</span><br></pre></td></tr></table></figure></p>
+<p>就可以在本地的host上查看了</p>
+<blockquote>
+<p>_config.yml 里的deployment 要把repo改成自己的github链接哈<br>搞定以后需要<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="variable">$npm</span> install hexo-deployer-git --save</span><br></pre></td></tr></table></figure></p>
+</blockquote>
+<p>这个只需要做一次<br>以后都直接<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="variable">$hexo</span> g -d</span><br></pre></td></tr></table></figure></p>
+<p>就可以部署啦</p>
+
+        
+        <br />
+        <div id="comment-container">
+        </div>
+        <div id="disqus_thread"></div>
+
+        <div id="lv-container">
+        </div>
+
+    </div>
+</div>
+    </div>
+</div>
+
+
+<footer class="footer">
+    <ul class="list-inline text-center">
+        
+        
+
+        
+
+        
+
+        
+
+        
+
+    </ul>
+    
+    <p>
+        <span id="busuanzi_container_site_pv">
+            <span id="busuanzi_value_site_pv"></span>PV
+        </span>
+        <span id="busuanzi_container_site_uv">
+            <span id="busuanzi_value_site_uv"></span>UV
+        </span>
+        Created By <a href="https://hexo.io/">Hexo</a>  Theme <a href="https://github.com/aircloud/hexo-theme-aircloud">AirCloud</a></p>
+</footer>
+
+
+
+
+</body>
+
+<script>
+    // We expose some of the variables needed by the front end
+    window.hexo_search_path = "search.json"
+    window.hexo_root = "/"
+    window.isPost = true
+</script>
+<script src="https://cdn.bootcss.com/jquery/3.3.1/jquery.min.js"></script>
+<script src="/js/index.js"></script>
+<script async src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+
+
+
+
+</html>
